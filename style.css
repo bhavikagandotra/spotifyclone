@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.phone {
+    width: 99vw;
+    position: fixed;
+    margin: 0.5vw 1vh;
+    top: 0;
+    left: 0;
+    height: 98vh;
+    background: black;
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+
+.header {
+    display: flex;
+    list-style-type: none;
+    width: 98%;
+    padding: 1%;
+}
+
+.headerleft {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.headryt {
+    display: flex;
+    align-items: center;
+}
+
+.header .icon {
+    margin: 0 1%;
+}
+
+.header i:hover {
+    filter: hue-rotate(360deg);
+    font-size: 65px;
+    transition: ease-in 1s;
+}
+
+.notification {
+    float: right;   
+}
+
+.head {
+    color: bisque;
+    border-radius: 11px 11px 0px 0px;
+    height: auto;
+    font-size: 25px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    column-gap: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.button {
+    margin: 10px;
+    height: 75px;
+    width: 200px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.button1,.button3,.button5 {
+    background-color: thistle;
+}
+
+.button2,.button4 {
+    background-color: thistle;
+}
+
+.button5 {
+    position: absolute;
+    top: 99px;
+    background: transparent;
+    left: 217px;
+    height: auto;
+    width: 23%;
+    border: transparent;
+}
+
+.button6 {
+    position: absolute;
+    top: 99px;
+    background: transparent;
+    left: 200px;
+    height: auto;
+    width: 23%;
+    border: transparent;
+}
+
+.music {
+    position: absolute;
+    bottom: -1px;
+    right: 0px;
+    height: auto;
+    width: 27%;
+    filter: invert(1);
+}
+.open{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(97 97 97 / 80%);
+  
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+}
+.d-none{
+    display: none;
+}
+.show{
+    display: block !important;
+}
+.opencen{
+    width: 40vw;
+    background-color:gainsboro;
+    height: 70vh;
+    /* opacity: 1 !important; */
+    margin: 14vh 24.5vw;
+}

@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>SPOTIFY CLONE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script  type="text/javascript"  src="C:\Users\bhavi\Downloads\spotifyclonehtmlcode\script.js"></script>
+  </head>
+
+  <body>
+    <div class="phone">
+      <div class="head">
+        <ul class="header">
+          <li class="headerleft">
+            <p id="greetings"></p>
+          </li>
+          <li class="headryt">
+            <li class="icon"><i class="fa fa-bell" aria-hidden="true"></i></li>
+            <li class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+            <li class="icon"><i class="fa fa-cog" aria-hidden="true"></i></li>
+          </li>
+        </ul>
+      </div>
+      <div class="button">
+        <button class="button button1" onclick="open1()">
+          <img src="https://images.cinemaexpress.com/uploads/user/imagelibrary/2019/6/21/original/the-first-reviews-of-kabir-singh-are-here-1200x90-1561092137_1200x900.jpg?w=600&dpr=1.5"
+            alt="Pic" height="60" width="60">
+          Bollywood mash 
+        </button>
+        <button class="button button2">
+          <img src="https://i.scdn.co/image/ab6761610000e5ebc40600e02356cc86f0debe84" alt="Error" height="60" width=""
+            60>
+          Atif Aslam Mix
+        </button>
+        <br>
+        <button class="button button3">
+          <img src="https://images.news9live.com/h-upload/2022/06/13/427379-jjj.jpg?w=1200&enlarge=true" alt="pic"
+            height="60" width="60">
+          Bollywood & chill
+        </button>
+        <button class="button button4">
+          <img src="https://c.ndtvimg.com/2019-12/l8hlqq1g_good-newwz-instagram_625x300_03_December_19.jpg" alt="pic"
+            height="60" width="60">
+          Bollywood Dhamaka
+        </button>
+        <button class="button button5">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHit0jlpilquwZCnQtToEJ1vkwMIQdLGlGq7QETyX1Zw&usqp=CAU&ec=48600112"
+            alt="music" height="fit-content" width="auto">
+          <p1 style="z-index: 1; top: 95%; position: absolute; color: black; font-size: 11; font-weight: bold;left: 50%; transform: translate(-45%, -24%);">
+            Recently Played
+          </p1>
+        </button>
+        <button class="button button6">
+          <img src="https://i1.sndcdn.com/avatars-we98ivkyctRp4xTu-TRj9gw-t500x500.jpg" alt="popular music" style="position: relative ;
+            height: 265px; width: 182px;  left: 219px">
+          <p1 style="transform: translate(-50%, -50%);  right: -128px; z-index: 1; top: 95%; position: absolute; color: black; font-size: 11; font-weight: bold;">Most liked </p1>
+
+        </button>
+        <br>
+      </div>
+      <div>
+        <img src="https://www.citypeopleonline.com/wp-content/uploads/2017/11/music2.png" alt="Error" class="music">
+      </div>
+      <div class="bottom">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <i class="fa fa-spotify" aria-hidden="true"></i>
+      </div>
+      <div class="open d-none" id="blywd_mash">
+        <div class="opencen">
+           <audio controls autoplay>
+                <source src="Music/bollywood mash/old_Tum Mile-Tum Mile.mp3" type="audio/mp3">
+           </audio>
+        </div>
+            
+      </div>
+
+    </div>
+    <script>
+        var date = new Date();
+        var hour = date.getHours();
+        var welcome;
+        if (hour < 12) {
+            welcome = "Good Morning";
+        } else if (hour < 17) {
+            welcome = "Good Afternoon";
+        } else {
+            welcome = "Good Evening";
+        }
+        document.getElementById('greetings').innerHTML = '<b>' + welcome + '</b>';
+
+
+        function open1() {
+    console.log("hello test");
+    document.getElementById("blywd_mash").classList.remove('d-none');
+  }
+    </script>
+  </body>
+</html>
